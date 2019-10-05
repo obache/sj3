@@ -107,7 +107,7 @@ OffsetRec *real_ofsrec(u_char *);
 
 /* readline.c */
 int *readline();
-void setline(int (*)());
+void setline(void (*)(int *, int *, int, int *));
 
 /* string.c */
 int bubun_str(u_char *, int, u_char *, int);

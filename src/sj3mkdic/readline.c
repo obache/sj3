@@ -278,7 +278,7 @@ readline()
 
 
 void
-setline(int (*func)())
+setline(void (*func)(int *, int *, int, int *))
 {
 	int	i;
 
