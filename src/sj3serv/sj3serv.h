@@ -137,7 +137,7 @@ void preopen_dict();
 int check_user(char *, char *);
 
 /* priv.c */
-void set_priv(const char *);
+void priv_set(const char *);
 
 /* timestamp.c */
 extern char *time_stamp;
