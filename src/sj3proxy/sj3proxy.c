@@ -80,6 +80,9 @@
 #else
 # include <sj3vis.h>
 #endif
+#if defined(HAVE_SYS_SELECT_H)
+#include <sys/select.h>
+#endif
 #include "sys-queue.h"
 
 #include <lua.h>
