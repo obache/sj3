@@ -288,7 +288,7 @@ priv_getugid(char *username, sj3_ugid *ugid)
 
 	len = strlen(username) + 1;
 	if (len == 0 || BUFSIZ < len)
-		return NULL;
+		return 0;
 
 	must_write(auth_fd, &cmd, sizeof(int));
 	must_write(auth_fd, &len, sizeof(size_t));
