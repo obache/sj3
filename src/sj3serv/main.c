@@ -90,6 +90,7 @@ terminate_handler(int sig)
 	server_terminate();
 }
 
+static int
 sigchild_handler(int sig)
 {
 	int save_errno = errno;
